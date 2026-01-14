@@ -31,12 +31,13 @@
    3. Wait for the action to finish; your site will be at `https://shijochackotcs.github.io/chef-site/`.
 
 ### Netlify
-- Connect your GitHub repo on Netlify.
-- Build settings:
+- Connect your GitHub repo on Netlify or drag-and-drop the `app/dist` folder after building.
+- **Build settings:**
    - Base directory: `app`
    - Build command: `npm run build`
-   - Publish directory: `app/dist`
-- SPA routing: `_redirects` is included and will be deployed from `app/public`.
+   - Publish directory: `dist`
+- SPA routing: `_redirects` is included and will be deployed from `public`.
+- For custom domains, set them up in the Netlify dashboard (do not use a CNAME file).
 
 ### Vercel
 - Import your GitHub repo on Vercel.
